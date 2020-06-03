@@ -1,0 +1,5 @@
+window版本，压缩文件解压后只有一个consul.exe文件，用cmd打开本路径
+可以查看版本号：consul --version
+启动：consul agent -dev
+
+访问consul管理页面http://localhost:8500/ui/dc1/services
