@@ -10,15 +10,19 @@ import javax.annotation.Resource;
 @Service
 public class PaymentServiceImpl implements PaymentService {
 
-    @Resource
-    private PaymentDao paymentDao;
+//    @Resource
+//    private PaymentDao paymentDao;
     @Override
     public int create(Payment payment) {
-        return paymentDao.create(payment);
+
+        return 1;
     }
 
     @Override
     public Payment getPaymentById(Long id) {
-        return paymentDao.getPaymentById(id);
+        Payment payment=new Payment();
+        payment.setId(1L);
+        payment.setSerial("巫巫测试");
+        return payment;
     }
 }
