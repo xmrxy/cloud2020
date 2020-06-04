@@ -15,7 +15,7 @@ public class ApplicationContextConfig {
 
 
     @Bean
-    @LoadBalanced
+    @LoadBalanced //如果用自定义的负载均衡方式或者更换默认轮训方式，必须注释这个，
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }

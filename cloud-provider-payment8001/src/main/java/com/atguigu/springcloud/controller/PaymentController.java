@@ -55,4 +55,21 @@ public class PaymentController {
         instances.stream().forEach(instance->log.info(instance.getServiceId()+"\t"+instance.getHost()+"\t"+instance.getUri()));
         return  this.discoveryClient;
     }
+
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB(){
+            return serverPort;
+    }
+
+    @GetMapping(value = "/payment/feign/timeout")
+    public String paymentFeignTimeout(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
+    }
+
+
 }
