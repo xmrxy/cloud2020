@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: nacos-config-client
+    name: nacos-com.atguigu.springcloud.alibaba.config-client
   cloud:
     nacos:
       discovery:
@@ -16,4 +16,4 @@ spring:
 
 #${prefix}-${spring.profile.active}.${file-extension}
 # ${spring.application.name}-${spring.profile.active}.${file-extension}
-# nacos-config-client-dev.yml
+# nacos-com.atguigu.springcloud.alibaba.config-client-dev.yml

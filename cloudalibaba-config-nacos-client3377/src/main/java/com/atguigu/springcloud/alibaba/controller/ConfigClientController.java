@@ -10,10 +10,10 @@ import javax.annotation.Resource;
 @RestController
 @RefreshScope //支持nacos的动态刷新功能
 public class ConfigClientController {
-    @Value("${config.info}")
+    @Value("${com.atguigu.springcloud.alibaba.config.info}")
     private String configInfo;
 
-    @GetMapping(value = "/config/info")
+    @GetMapping(value = "/com.atguigu.springcloud.alibaba.config/info")
     public String getConfigInfo() {
         return configInfo;
     }

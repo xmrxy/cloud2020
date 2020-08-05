@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloudalibaba-config-nacos-client3377</artifactId>
+    <artifactId>cloudalibaba-com.atguigu.springcloud.alibaba.config-nacos-client3377</artifactId>
     <dependencies>
-        <!-- nacos config-->
+        <!-- nacos com.atguigu.springcloud.alibaba.config-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
